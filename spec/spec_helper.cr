@@ -1,2 +1,2 @@
 require "spec"
-require "../src/cmd-coffee-crystal"
+require "../src/requires"

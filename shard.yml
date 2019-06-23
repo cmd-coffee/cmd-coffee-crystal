@@ -1,5 +1,7 @@
 name: cmd-coffee-crystal
 version: 0.1.0
+crystal: 0.29.0
+license: MIT
 
 authors:
   - Evan Closson <evan@evanclosson.com>
@@ -8,11 +10,16 @@ targets:
   cmd-coffee-crystal:
     main: src/cmd-coffee-crystal.cr
 
-crystal: 0.29.0
-
-license: MIT
-
 development_dependencies:
   ameba:
     github: veelenga/ameba
     version: ~> 0.10.0
+
+dependencies:
+  commander:
+    github: mrrooijen/commander
+    version: ~> 0.3.3
+  terminal_table:
+    github: benoist/terminal_table.cr
+  stringer:
+    github: cmd-coffee/stringer

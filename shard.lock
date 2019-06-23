@@ -1,0 +1,18 @@
+version: 1.0
+shards:
+  ameba:
+    github: veelenga/ameba
+    version: 0.10.0
+
+  commander:
+    github: mrrooijen/commander
+    version: 0.3.3
+
+  stringer:
+    github: cmd-coffee/stringer
+    version: 0.1.0
+
+  terminal_table:
+    github: benoist/terminal_table.cr
+    commit: a14e244219a6a7b804b3491bafcff73f4b74855e
+
