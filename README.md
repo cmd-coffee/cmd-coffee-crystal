@@ -2,6 +2,10 @@
 
 TODO: Write a description here
 
+## Project Health Status
+
+[![CircleCI](https://circleci.com/gh/cmd-coffee/cmd-coffee-crystal.svg?style=shield)](https://circleci.com/gh/cmd-coffee/cmd-coffee-crystal)
+
 ## Installation
 
 TODO: Write installation instructions here
@@ -25,3 +29,4 @@ TODO: Write development instructions here
 ## Contributors
 
 - [Evan Closson](https://github.com/your-github-user) - creator and maintainer
+
