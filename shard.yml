@@ -1,0 +1,13 @@
+name: cmd-coffee-crystal
+version: 0.1.0
+
+authors:
+  - Evan Closson <evan@evanclosson.com>
+
+targets:
+  cmd-coffee-crystal:
+    main: src/cmd-coffee-crystal.cr
+
+crystal: 0.29.0
+
+license: MIT
