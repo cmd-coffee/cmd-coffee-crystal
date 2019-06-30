@@ -54,7 +54,7 @@ module CmdCoffee::API
     def join(invite_code)
       request_json = JSON.build do |json|
         json.object do
-          json.field "invite-code", invite_code
+          json.field "inviteCode", invite_code
         end
       end
 

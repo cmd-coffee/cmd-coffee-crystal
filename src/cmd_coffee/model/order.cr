@@ -1,15 +1,15 @@
 module CmdCoffee::Model
   class Order
     JSON.mapping(
-      order_key: {key: "order-key", type: String, nilable: true},
-      state: {key: "state", type: String, nilable: true},
-      product_code: {key: "product-code", type: String, nilable: false},
-      product_name: {key: "product-name", type: String, nilable: true},
-      shipping_address: {key: "shipping-address", type: ShippingAddress, nilable: false},
+      order_key: {key: "orderKey", type: String, nilable: true},
+      status: {key: "status", type: String, nilable: true},
+      product_code: {key: "productCode", type: String, nilable: false},
+      product_name: {key: "productName", type: String, nilable: true},
+      shipping_address: {key: "shippingAddress", type: ShippingAddress, nilable: false},
     )
 
     def self.table_header
-      ["Order Key", "State", "Product Code", "Product Name", "Shipping"]
+      ["Order Key", "Status", "Product Code", "Product Name", "Shipping"]
     end
 
     def initialize(_product_code, _shipping_address)
@@ -20,7 +20,7 @@ module CmdCoffee::Model
     def table_row
       [
         order_key,
-        state,
+        status,
         product_code,
         product_name,
         shipping_address.to_s,

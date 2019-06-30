@@ -1,7 +1,7 @@
 module CmdCoffee::Model
   class Join
     JSON.mapping(
-      access_key: {key: "access-key", type: String, nilable: false},
+      access_key: {key: "accessKey", type: String, nilable: false},
     )
   end
 end
