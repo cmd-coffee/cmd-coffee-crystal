@@ -76,6 +76,14 @@ module CmdCoffee
         cmd.short = "order by coffee-code"
         cmd.long = "place an order by coffee-code, result is a crypto currency address to send funds to"
         cmd.flags.add config_flag
+
+        cmd.flags.add do |flag|
+          flag.name = "promo-code"
+          flag.long = "--promo-code"
+          flag.default = "none"
+          flag.description = "attach a promotional code to this order"
+        end
+
         cmd.run do |options, arguments|
           CmdCoffee::Command::Order.new(options, arguments).run
         end

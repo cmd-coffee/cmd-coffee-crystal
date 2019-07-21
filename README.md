@@ -21,8 +21,6 @@ A cmd line client written in crystal for interacting with [cmd.coffee](https://c
 
 ### Usage
 
-
-
 ```sh
 > ./bin/cmd.coffee init
 

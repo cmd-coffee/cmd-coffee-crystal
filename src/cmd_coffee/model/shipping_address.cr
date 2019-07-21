@@ -14,7 +14,7 @@ module CmdCoffee::Model
 
     def initialize(_name, _company, _address1, _address2, _city, _state, _zip, _email, _phone)
       @name = _name
-      @company = _company
+      @company = _company.blank? ? nil : _company
       @address1 = _address1
       @address2 = _address2.blank? ? nil : _address2
       @city = _city
@@ -25,7 +25,17 @@ module CmdCoffee::Model
     end
 
     def to_s
-      [@name, @company, @address1, @address2, @city, @state, @zip, @email, @phone].compact!.join(", ")
+      [
+        @name,
+        @company.try &.blank? ? nil : @company,
+        @address1,
+        @address2.try &.blank? ? nil : @address2,
+        @city,
+        @state,
+        @zip,
+        @email.try &.blank? ? nil : @email,
+        @phone.try &.blank? ? nil : @phone
+      ].compact!.join(", ")
     end
   end
 end
